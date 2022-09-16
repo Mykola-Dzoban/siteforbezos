@@ -1,0 +1,162 @@
+html {
+    /* Setting a base font size of 10px give us easier rem calculations
+       Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+     */
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 3.25rem;
+}
+
+a {
+    color: #375e7e;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #997c51;
+}
+
+#main {
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 15px;
+    background: #eee;
+    width: 1000px;
+    filter: drop-shadow(0 0 5px #d1d1d1);
+}
+
+img {
+    max-width: 300px;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+#img-div {
+    background: white;
+    padding: 10px;
+    margin: 0 auto;
+    width: 410px;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 10px #afabab);
+}
+
+#img-caption {
+    margin: 15px 0 5px 0;
+}
+
+#headline {
+    margin: 50px 0;
+    text-align: center;
+}
+
+ul {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+li {
+    margin: 16px 0;
+}
+
+blockquote {
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+}
+/* Responsive */
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    #main {
+        width: 850px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+    #main {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        max-width: 250px;
+    }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    #main {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+img {
+    max-width: 200px;
+}
+
+#img-div {
+    width: auto;
+}
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    #main {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+font-size: 25px;
+    }
+    #headline {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    li {
+        font-size: 13px;
+    }  
+    .paragraph {
+        font-size: 13px;
+    }
+    .wiki {
+        font-size: 13px;
+    }
+img {
+    width: 150px;
+}
+
+#img-div {
+    width: auto;
+}
+}
